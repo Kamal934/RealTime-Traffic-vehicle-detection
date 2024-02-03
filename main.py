@@ -1,20 +1,3 @@
-# from ultralytics import YOLO
-# import cv2
-
-# model= YOLO("best.pt")
-# cap = cv2.VideoCapture("rtsp://50.252.187.218:554/axis-media/media.amp")
-
-# while cap.isOpened():
-#     ret, frame = cap.read()
-#     model.predict(frame,  save=True, show=True,conf=0.5)
-#     cv2.imshow('Live Video', frame)
-#     if cv2.waitKey(1) & 0xFF == ord('q'):
-#         break
-    
-# cap.release()
-# cv2.destroyAllWindows()
-
-
 from flask import Flask, render_template, Response
 from ultralytics import YOLO
 import cv2
